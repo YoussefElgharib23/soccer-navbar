@@ -132,6 +132,7 @@ header * {
 /* Sub menu */
 
 .sub-menu {
+    display: none;
     background-color: #2e353d !important;
     padding: 20px;
     position: absolute;
