@@ -19,6 +19,8 @@ header {
     justify-content: flex-end;
     flex-wrap: nowrap;
     background-image: url('../../images/bg-nav.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 
 }
@@ -130,6 +132,16 @@ header * {
     padding: 8px 5px !important;
 } */
 
+/* Main navbar */
+
+@media screen and (max-width: 1145px) {
+    nav.navbar {
+        display: none;
+    }
+}
+
+/* End Main Navbar */
+
 /* Sub menu */
 
 .sub-menu {
@@ -142,7 +154,11 @@ header * {
     width: 968px;
     border-top: solid 10px #0eb2bb;
     top: 300px;
-    left: 278px;
+    left: 284px;
+}
+
+.navbar-nav__mobile a {
+    color: white !important;
 }
 
 .sub-menu li {
