@@ -44,10 +44,22 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('mouseover', () => {
                 subMenu.classList.add('show')
             })
-    
-            link.addEventListener('mouseleave', () => {
-                subMenu.classList.remove('show')
+
+            subMenu.addEventListener('mouseover', () => {
+                if (!subMenu.classList.contains('show'))
+                    subMenu.classList.add('show')
             })
+
+            subMenu.addEventListener('mouseleave', () => {
+                if (subMenu.classList.contains('show'))
+                    subMenu.classList.remove('show')
+            })
+
+            setTimeout(() => {
+                link.addEventListener('mouseleave', () => {
+                    subMenu.classList.remove('show')
+                })
+            }, 500);
         }
         
     })
