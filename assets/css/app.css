@@ -53,6 +53,10 @@ header {
     nav.navbar {
         display: none;
     }
+
+    .rotate__lg {
+        transform: rotate(180deg);
+    }
 }
 
 .show {

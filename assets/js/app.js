@@ -16,20 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    let hasSubMenus = document.querySelectorAll(".has__sub")
+    let hasSubMenus = document.querySelectorAll(".nav__link")
     hasSubMenus.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault()
 
-            let menu = item.querySelector('.sub-menu__mobile')
+            let menu = item.parentNode.parentNode.querySelector('.sub-menu__mobile')
             if (menu.classList.contains('show')) {
                 menu.classList.remove('show')
-                item.querySelector('i').classList.remove('rotate')
+                item.parentNode.parentNode.querySelector('i').classList.remove('rotate')
             }
             else {
                 menu.classList.add('show')
-                item.querySelector('i').classList.add('rotate')
-
+                item.parentNode.parentNode.querySelector('i').classList.add('rotate')
             }
 
             console.log()
