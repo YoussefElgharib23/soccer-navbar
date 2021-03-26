@@ -25,7 +25,7 @@ header {
 
 }
 
-@media screen and (max-width: 1145px) {
+@media (max-width: 1200px) {
     .navbar-nav {
         display: none !important;
     }
@@ -48,6 +48,10 @@ header {
 
     header {
         justify-content: flex-start;
+    }
+
+    nav.navbar {
+        display: none;
     }
 }
 
@@ -133,28 +137,26 @@ header * {
 } */
 
 /* Main navbar */
-
-@media screen and (max-width: 1145px) {
-    nav.navbar {
-        display: none;
-    }
-}
-
 /* End Main Navbar */
 
 /* Sub menu */
 
+.outer {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
 .sub-menu {
+    top: 100%;
+    left: 86px;
     display: none;
     direction: rtl;
     background-color: #2e353d !important;
-    padding: 20px;
     position: absolute;
     z-index: 9999;
     width: 968px;
     border-top: solid 10px #0eb2bb;
-    top: 300px;
-    left: 284px;
 }
 
 .navbar-nav__mobile a {
