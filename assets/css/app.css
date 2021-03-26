@@ -18,7 +18,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     flex-wrap: nowrap;
-    background-image: url('images/bg-nav.svg');
+    background-image: url('../../images/bg-nav.svg');
 
 }
 
