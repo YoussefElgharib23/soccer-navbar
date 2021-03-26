@@ -18,9 +18,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     flex-wrap: nowrap;
-    background: #141E30;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url('/images/bg-nav.svg');
 
 }
 
@@ -69,10 +67,19 @@ header * {
 
 .nav-item {
     position: relative;
-    padding: 10px 15px;
+    background-color: #2e353d;
+    border: 1px solid black;
 }
 
-.sub-menu {
+.nav-item .nav-link {
+    color: #999 !important;
+}
+
+.nav-item .nav-link:hover {
+    color: white !important;
+}
+
+/* .sub-menu {
     display: none;
     text-align: center !important;
     margin: 0;
@@ -112,18 +119,66 @@ header * {
     border-color: #26273b transparent;
     border-width: 0 8px 8px;
     transform: translateX(-50%);
-}
-
+} */
+/* 
 .sub-menu a {
     position: relative;
     display: inline-block;
     white-space: nowrap;
     border: none;
     padding: 8px 5px !important;
+} */
+
+/* Sub menu */
+
+.sub-menu {
+    background-color: #2e353d !important;
+    padding: 20px;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 103%;
+    width: 968px;
+    border-top: solid 10px #0eb2bb;
 }
 
+.sub-menu li {
+    font-weight: bold !important;
+    padding: 10px;
+}
+
+.sub-menu li:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+.sub-menu a {
+    color: #999 !important;
+}
+
+.n-container {
+    color: white;
+}
+
+.n-container:hover {
+    color: #999;
+}
+
+.n-container a {
+    color: inherit !important;
+}
+
+.n-container p {
+    color: inherit;
+}
+
+.sub-menu a:hover {
+    color: white !important;
+}
+
+/* End sub menu */
+
 ul { margin: 0 !important; padding: 0 !important; list-style-type: none; }
-a:not(.nav-link) { color: white !important; text-decoration: none !important; }
+a:not(.nav-link) { text-decoration: none !important; }
 
 .navbar-nav {
     width: 100% !important;
