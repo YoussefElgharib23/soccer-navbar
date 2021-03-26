@@ -286,7 +286,7 @@
                     <li class="nav-item has-sub-menu" data-target="3">
                         <a href="" class="nav-link">الدوريات الاوروبية</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item has-sub-menu" data-target="4">
                         <a href="" class="nav-link">بطولات عالمية</a>
                     </li>
                     <li class="nav-item">
@@ -474,8 +474,44 @@
                     </div>
                 </div>
             </ul>
+            <ul class="sub-menu" id="4">
+                <div class="row">
+                    <div class="col-4">
+                        <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                            <a href="{{ route('league.standing', ['id' => 583]) }}">كأس العالم</a>
+                        </li>
+                        <li id="menu-item-1396" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1396">
+                            <a href="{{ route('league.standing', ['id' => 637]) }}">بطولة أمم أوروبا</a>
+                        </li>
+                        <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                            <a href="{{ route('league.standing', ['id' => 719]) }}">دوري الأمم الأوروبية </a>
+                        </li>
+                    </div>
+                    <div class="col-4">
+                        <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                            <a href="{{ route('league.standing', ['id' => 594]) }}">كأس العالم للأندية </a>
+                        </li>
+                        <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                            <a href="{{ route('league.standing', ['id' => 764]) }}">دوري أبطال أوروبا</a>
+                        </li>
+                        <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                            <a href="{{ route('league.standing', ['id' => 2878]) }}">دوري أبطال آسيا</a>
+                        </li>
+                    </div>
+                    <div class="col-4">
+                        <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                            <a href="{{ route('league.standing', ['id' => 1082]) }}">دوري أبطال إفريقيا</a>
+                        </li>
+                        <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                            <a href="#">الروسي</a>
+                        </li>
+                        <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                            <a href="{{ route('league.standing', ['id' => 3104]) }}">كوبا أميركا</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
         </div>
-
     </header>
     <div class="container my-3 justify-content-center" style="display: none !important;">
         <img src="images/navbar.jpg" width="100%" alt="">
