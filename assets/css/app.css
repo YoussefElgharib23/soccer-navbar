@@ -141,19 +141,10 @@ header * {
 
 /* Sub menu */
 
-.outer {
-    display: table;
-    width: 100%;
-    position: relative;
-}
-
 .sub-menu {
-    top: 100%;
-    left: 86px;
     display: none;
     direction: rtl;
     background-color: #2e353d !important;
-    position: absolute;
     z-index: 9999;
     width: 968px;
     border-top: solid 10px #0eb2bb;
