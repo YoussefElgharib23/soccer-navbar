@@ -35,4 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log()
         })
     })
+
+    let subMenusLinks = document.querySelectorAll('.has-sub-menu')
+    subMenusLinks.forEach(link => {
+        let id = link.getAttribute('data-target')
+        let subMenu = document.getElementById(id)
+        if (subMenu) {
+            link.addEventListener('mouseover', () => {
+                subMenu.classList.add('show')
+            })
+    
+            link.addEventListener('mouseleave', () => {
+                subMenu.classList.remove('show')
+            })
+        }
+        
+    })
 })
