@@ -1,0 +1,327 @@
+<header id="rs-header" class="single-header header-style5">
+            <div class="header-inner  menu-sticky">
+                <div class="toolbar-area d-none-lg">
+                    <div class="container-fluid">
+                        <div class="row flex-row-reverse">
+                            <div class="col-lg-6" style="direction: rtl;">
+                                <ul class="rs-contact-date text-right">
+                                    <li class="top-date-4 f-c"><i class="fa fa-calendar-check-o"></i>
+                                        {{ Carbon\Carbon::now()->locale('ar_AR')->isoFormat('dddd LL') }}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="toolbar-sl-share clearfix toolbar-date d-flex">
+                                    <ul class="clearfix mr-auto">
+                                        <li><a href="#%20" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="# " target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="# " target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="# " target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-area" style="background:#313a47">
+                    <div class="container-fluid py-3">
+                        <div class="row-table d-b-lg d-flex flex-row-reverse align-items-center justify-content-between" style="flex-direction: row-reverse !important;">
+                            <div class="col-cell header-logo">
+                                <div class="logo-area">
+                                    <a href="{{ route('home.index') }}" rel="home"><img style="max-height: 65px" src="{{ asset('/assets/images/khelo-logo.png') }}" alt="Sports WordPress Theme"></a>
+                                </div>
+                                <div class="logo-area sticky-logo">
+                                    <a href="{{ route('home.index') }}" rel="home"><img style="max-height: 46px" src="{{ asset('/assets/images/logo_lite.png') }}" alt="Sports WordPress Theme"></a>
+                                </div>
+                            </div>
+                            <div class="col-cell menu-responsive d-flex">
+                                <div>
+                                    <nav class="nav navbar">
+                                        <div class="navbar-menu">
+                                            <div class="menu-primary-menu-container">
+                                                <ul id="primary-menu-single" class="menu d__flex__lg flex-row-reverse flex-wrap justify-content-center">
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-20">
+                                                        <a href="{{ route('home.index') }}">الرئيسية</a>
+                                                    </li>
+                                                    <li id="menu-item-1744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1744">
+                                                        <a href="{{ route('blog.news') }}">الأخبار</a>
+                                                    </li>
+                                                    <li id="menu-item-1744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385">
+                                                        <a href="#">الدوريات الأوروبية</a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                <a href="{{ route('league.standing', ['id' => 583]) }}">الإنجليزي</a>
+                                                            </li>
+                                                            <li id="menu-item-1396" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1396">
+                                                                <a href="{{ route('league.standing', ['id' => 637]) }}">الإسباني</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="{{ route('league.standing', ['id' => 719]) }}">الإيطالي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="{{ route('league.standing', ['id' => 594]) }}">الألماني</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="{{ route('league.standing', ['id' => 764]) }}">الفرنسي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="{{ route('league.standing', ['id' => 2878]) }}">الهولندي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="{{ route('league.standing', ['id' => 1082]) }}">البلجيكي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">الروسي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="{{ route('league.standing', ['id' => 3104]) }}">البرتغالي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">الروماني</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">التركي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="{{ route('league.standing', ['id' => 1082]) }}">اليوناني</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-1744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385">
+                                                        <a href="#">الدوريات العربية</a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                <a href="#">السعودي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">المصري</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">الإماراتي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">القطري</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">السوري</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">العراقي</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">الأردني</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">اللبناني</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">الفلسطيني</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">العماني</a>
+                                                            </li>
+                                                            <li id="menu-item-1399" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1399">
+                                                                <a href="#">البحريني</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="{{ route('blog.index') }}">مقالات</a>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="#">إنترفيوز</a>
+                                                    </li>
+                                                    <li id="menu-item-1744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385">
+                                                        <a href="#">سوشل ميديا</a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                <a href="#">مشاركات يوتيوبر</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="#">حكايات كروية</a>
+                                                    </li>
+                                                    <li id="menu-item-1744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385">
+                                                        <a href="#">عشاق الكرة</a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                <a href="#">منتديات</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="#">مشاكسات كروية</a>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="#">كاريكاتير</a>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="#">تريند الكرة</a>
+                                                    </li>
+                                                    <li id="menu-item-1744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385">
+                                                        <a href="#">لايف مع رائد عمر</a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                <a href="#">كواليس الدوري السوري</a>
+                                                            </li>
+                                                            <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                <a href="#">الاستديو التحليلي</a>
+                                                            </li>
+                                                            <li id="menu-item-1389" class="text-right menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                <a href="#">قضايا كروية</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="#">انضم إلينا</a>
+                                                    </li>
+                                                    <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                        <a href="#">من نحن</a>
+                                                    </li>
+                                                    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                                                        <a href="{{ route('contact.us') }}">تواصل معنا</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-link-container mobile-menu-link">
+                                            <a href="#" class="nav-menu-link">
+                                                <span class="hamburger1"></span>
+                                                <span class="hamburger2"></span>
+                                                <span class="hamburger3"></span>
+                                            </a>
+                                        </div>
+                                    </nav>
+                                    <nav class="nav-container mobile-menu-container">
+                                        <ul class="sidenav">
+                                            <li class="nav-link-container">
+                                                <a href="#" class="nav-menu-link">
+                                                    <span class="hamburger1"></span>
+                                                    <span class="hamburger3"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="menu-primary-menu-container">
+                                                    <ul id="primary-menu-single2" class="menu text-right ml-auto">
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                            <a href="">الرئيسية</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                                                            <a href="">الأخبار</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385 text-right">
+                                                            <a href="#">الدوريات الأوروبية</a>
+                                                            <ul class="sub-menu" style="display: none;">
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 583]) }}">الإنجليزي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 637]) }}">الإسباني</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 719]) }}">الإيطالي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 594]) }}">الألماني</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 764]) }}">الفرنسي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 2878]) }}">الهولندي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 1082]) }}">البلجيكي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">الروسي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 3104]) }}">البرتغالي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">الروماني</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">التركي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="{{ route('league.standing', ['id' => 1082]) }}">اليوناني</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385 text-right">
+                                                            <a href="#">الدوريات العربية</a>
+                                                            <ul class="sub-menu" style="display: none;">
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">السعودي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">المصري</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">الإماراتي</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-20 current-menu-item page_item page-item-14 current_page_item">
+                                                            <a href="{{ route('blog.index') }}">مقالات</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385 text-right">
+                                                            <a href="#">سوشل ميديا</a>
+                                                            <ul class="sub-menu" style="display: none;">
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">مشاركات يوتيوبر</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385 text-right">
+                                                            <a href="#">سوشل ميديا</a>
+                                                            <ul class="sub-menu" style="display: none;">
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">مشاركات يوتيوبر</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385 text-right">
+                                                            <a href="#">لايف مع رائد عامر</a>
+                                                            <ul class="sub-menu" style="display: none;">
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">كواليس الدوري السوري</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">الاستديو التحليلي</a>
+                                                                </li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1389">
+                                                                    <a href="#">قضايا كروية</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-type-post_type menu-item-object-pagepage_item current_page_item menu-item-22">
+                                                            <a href="{{ route('contact.us') }}" aria-current="page">تواصل معنا</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="social-icon-responsive">
+                                                <ul class="offcanvas_social">
+                                                    <li>
+                                                        <a href="#%20" target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
+                                                    <li><a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
+                                                    </li>
+                                                    <li><a href="# " target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
+                                                    </li>
+                                                    <li><a href="# " target="_blank"><span><i class="fa fa-google-plus-square"></i></span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
